@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from model import create_model
-from data_loader import DataLoader
+from data_loader import ImageDataLoader
 import matplotlib.pyplot as plt
 
 def train_model(data_dir, epochs=10, batch_size=32, learning_rate=0.001):
@@ -15,7 +15,7 @@ def train_model(data_dir, epochs=10, batch_size=32, learning_rate=0.001):
     print(f"Using device: {device}")
     
     # Tải dữ liệu
-    data_loader = DataLoader(data_dir, batch_size=batch_size)
+    data_loader = ImageDataLoader(data_dir, batch_size=batch_size)
     train_loader, test_loader = data_loader.load_data()
     
     # Tạo mô hình
