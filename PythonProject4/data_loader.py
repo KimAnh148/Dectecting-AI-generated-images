@@ -25,7 +25,7 @@ class ImageDataset(Dataset):
         
         return image, label
 
-class DataLoader:
+class ImageDataLoader:
     def __init__(self, data_dir, img_size=(32, 32), batch_size=32):
         self.data_dir = data_dir
         self.img_size = img_size
