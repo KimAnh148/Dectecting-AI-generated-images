@@ -140,7 +140,7 @@ def plot_training_history(history):
 
 if __name__ == '__main__':
     # Đường dẫn đến thư mục chứa dữ liệu
-    data_dir = 'path_to_your_data_directory'  # Thay đổi đường dẫn này
+    data_dir = 'C:/Users/tuant/PycharmProjects/PythonProject4/data'  # Thay đổi đường dẫn này
     
     # Huấn luyện mô hình
     model = train_model(data_dir) 
